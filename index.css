@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+   font-family: Orbitron;
+   color: #1B1212;
+}
+
+.flex-parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    width: 40%;
+    /* border: 5px blue solid; */
+}
+
+#timer-first, #timer-second {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+img, label {
+    margin: 50px 10px;
+}
+
+button {
+    font-family: Orbitron;
+    margin-top: 0;
+    border-radius: 5px;
+    padding: 20px 0;
+    border: none;
+    background:#1B1212;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+#timer-first, #timer-second {
+    font-size: 50px;
+    background: whitesmoke;
+    border: dashed 1px #1B1212;
+}
+
+i {
+    margin: 0 10px;
+}
+
+h1, h2 {
+    background: #1B1212;
+    color: whitesmoke;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 18px 0;
+}
+
+.big-buttons {
+    background: whitesmoke;
+    color: #1B1212;
+    padding: 100px 90px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 50px;
+    transition: transform 650ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in;
+}
+
+.big-buttons:hover {
+    /* transition: transform scale(2) */
+    transform: scale(1.2);
+    opacity: 0.9;
+    
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+#output-one {
+    transform: scale(2.3);
+    margin-top: 120px;
+    border-radius: 2px;
+}
+
+#file-label-one {
+    background: whitesmoke;
+    padding: 20px;
+    border: 1px dashed #1B1212;
+}
+
+#home {
+position: fixed;
+top: 0;
+left: 0;
+margin: 30px 20px;
+color: #1B1212;
+background: whitesmoke;
+padding: 10px;
+border-radius: 50px;
+transition: transform 450ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in;
+}
+
+#home:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
