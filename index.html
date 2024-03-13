@@ -11,37 +11,84 @@
 </head>
 
     <body>
-        <h2 id="title"> OGE Speaking <i class="fa-solid fa-rocket" style="color: #fff995;"></i> </h2>
-        <div class="flex-parent">
-            <a href="speaking-first.html"> <div class="big-buttons"> Read aloud </div></a>
-            <a href="speaking-third.html"> <div class="big-buttons"> Give a talk </div></a>
-        </div>
-        <h2 id="title"> OGE Writing <i class="fa-solid fa-feather-pointed" style="color: #fff995;"></i> </h2>
-        <div class="flex-parent">
-            <img src="./images/full & correct answer.png" class="flex-item" />
-            <img src="./images/Writing from examination.png" class="flex-item" />
-        </div>
-     <div class="flex-parent">
-            <img src="./images/criteria-writing 1.png" class="flex-item" />
-            <img src="./images/criteria-wroting 2.png" class="flex-item" />
-     </div>
-         <!-- <div class="flex-parent">
-            <img src="./images/critearia-extra.png" class="flex-item" />
-        </div> -->
+        <h1 id="title"> OGE Exam <i class="fa-solid fa-rocket" style="color: #fff995;"></i> </h1>
+<!--------------- Upload your image section  ---------------->
+        <section>
+            <div class="upload-section">
+                <input type="file"  accept="image/*" name="image" id="file-one" style="display: none;" >
+                <label class="upload-label" for="file-one" style="cursor: pointer;" id="file-label-one">Upload Image</label>
+                <img id="output-one" class="upload-image" style="display: none;" />
+                <!-- <input type="file"  accept="image/*" name="image" id="file-two" style="display: none;" >
+                <label class="flex-item" for="file-two" style="cursor: pointer;" id="file-label-two">Upload Image</label>
+                <img id="output-two" class="flex-item" style="display: none;"  />  -->
+        </section>
 
-        <div class="flex-parent">
-            <input type="file"  accept="image/*" name="image" id="file-one" style="display: none;" >
-            <label class="flex-item" for="file-one" style="cursor: pointer;" id="file-label-one">Upload Image</label>
-            <img id="output-one" class="flex-item" style="display: none;" />
-            <input type="file"  accept="image/*" name="image" id="file-two" style="display: none;" >
-            <label class="flex-item" for="file-two" style="cursor: pointer;" id="file-label-two">Upload Image</label>
-            <img id="output-two" class="flex-item" style="display: none;"  /> 
-     
+<!--------------- Timers section  ---------------->
+        <section class="timers-section">
+                <div class="timer-container">
+                    <p id="timer-first"> </p>
+                    <button id="button-first"> 
+                    Start preparing <i class="fa-solid fa-lightbulb"
+                    style="color: #fff995;"> </i> </button>
+                </div>
+                <div class="timer-container">
+                    <p id="timer-second"> </p>
+                    <button id="button-second"> 
+                    Start answering <i class="fa-solid fa-user-ninja fa-flip-horizontal" style="color: #fff995;"></i> </button>
+                </div>
+        </section>
+
+<!--------------- TO HIDE ELEMENTS  ---------------->
+        <div class="hide-elements-container">
+            <button id="hide-button-timer" class="hide-btn"> Hide </br> Timer </button>
+            <button id="hide-button-textarea" class="hide-btn"> Hide </br> Input </button>
+        </div>
+      
+
+<!--------------- Write your answer section  ---------------->
+        <section id='writing-section' class="writing-section">
+            <label for="text">Your answer : </label>
+            <textarea id="text" name="text" rows="30" cols="110" 
+            placeholder="Write your answer here"></textarea>
+        </section>
+
+
+<!---------------  EXTRA INFORMATION SECTION  ---------------->
+        <section class="details-section">
+            <details>
+                <summary class="summary-title"> Writing </summary>
+                <div class="flex-parent">
+                    <img src="./images/full & correct answer.png" class="flex-item" />
+                    <img src="./images/Writing from examination.png" class="flex-item" />
+                </div>
+             <div class="flex-parent">
+                    <img src="./images/criteria-writing 1.png" class="flex-item" />
+                    <img src="./images/criteria-wroting 2.png" class="flex-item" />
+             </div>
+            </details>
+            <details>
+                <summary class="summary-title"> Give a talk </summary>
+            <div class="flex-parent">
+                <img src="./images/key-parts.png" class="flex-item" />
+                <img src="./images/instruction.png" class="flex-item" />
             </div>
+            <div class="flex-parent">
+                <img src="./images/part-one.png" class="flex-item" />
+                <img src="./images/part-two.png" class="flex-item" />
+            </div>
+            </details>
+            <details>
+                <summary class="summary-title"> Read aloud </summary>
+            <div class="flex-parent">
+                <img src="./images/intonation.png" class="flex-item" />
+                <img src="./images/criteria.png" class="flex-item" />
+            </div>
+            </details>
+        </section>
 
-       
-            <!--Checklist -->
-            <h2>Check your work:</h2>
+ <!-----------CHECKLIST ----------------->
+            <h2>Check your work :</h2>
+        <section class=checklist>
             <label for="c1"> <input type="checkbox" name="criteria" value="90-132 words" id="c1">90-132 words</label>
             <label for="c2"><input type="checkbox" name="criteria" value="question 1" id="c2"> question 1</label>
             <label for="c3"><input type="checkbox" name="criteria" value="question 2" id="c3">question 2</label>
@@ -56,7 +103,7 @@
             <label for="c12"><input type="checkbox" name="criteria" value="grammar" id="c12">grammar</label>
             <label for="c13"><input type="checkbox" name="criteria" value="spelling" id="c13"> spelling</label>
             <label for="c14"><input type="checkbox" name="criteria" value="punctuation" id="c14">punctuation</label>
-            <p>
+        </section>
         <script src="index.js"> </script>
            
     </body>
