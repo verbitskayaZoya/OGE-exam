@@ -68,6 +68,9 @@ body {
     font-weight: 700;
 }
 
+textarea {
+   font-size: 30px;
+
 .details-section {
     display: flex;
     justify-content: space-around;
