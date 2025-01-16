@@ -88,22 +88,126 @@
 
  <!-----------CHECKLIST ----------------->
             <h2>Check your work :</h2>
-        <section class=checklist>
-            <label for="c1"> <input type="checkbox" name="criteria" value="90-132 words" id="c1">90-132 words</label>
-            <label for="c2"><input type="checkbox" name="criteria" value="question 1" id="c2"> question 1</label>
-            <label for="c3"><input type="checkbox" name="criteria" value="question 2" id="c3">question 2</label>
-            <label for="c4"><input type="checkbox" name="criteria" value="question 3" id="c4"> question 3</label>
-            <label for="c5"><input type="checkbox" name="criteria" value="question 4" id="c5">question 4</label>
-            <label for="c6"> <input type="checkbox" name="criteria" value="being polite" id="c6">being polite</label>
-            <label for="c7"><input type="checkbox" name="criteria" value="greeting, signature" id="c7"> greeting, signature</label>
-            <label for="c8"><input type="checkbox" name="criteria" value="logical" id="c8">logical</label>
-            <label for="c9"><input type="checkbox" name="criteria" value="paragraphs" id="c9"> paragraphs</label>
-            <label for="c10"><input type="checkbox" name="criteria" value="linking words" id="c10">linking words</label>
-            <label for="c11"><input type="checkbox" name="criteria" value="vocabulary" id="c11"> vocabulary</label>
-            <label for="c12"><input type="checkbox" name="criteria" value="grammar" id="c12">grammar</label>
-            <label for="c13"><input type="checkbox" name="criteria" value="spelling" id="c13"> spelling</label>
-            <label for="c14"><input type="checkbox" name="criteria" value="punctuation" id="c14">punctuation</label>
-        </section>
+            <main>
+                <section class="words-count">
+                    <h3> Words count </h3>
+                    <label for="words"> 
+                        <input type="checkbox" name="criteria" value="90-132 words" id="words"> 90-132 words
+                    </label>
+                    <label for="words-little"> 
+                        <input type="checkbox" name="criteria" value="less than 90" id="words-little"> less than 90 words
+                    </label>
+                </section>
+
+                <section class="k1">
+                    <h3> K1</h3>
+                    <fieldset>
+                        <legend> Question 1</legend>
+                        <label for="c2">
+                            <input type="checkbox" name="criteria" value="question 1" id="c2"> is complete 
+                        </label>
+                        <label for="c2">
+                            <input type="checkbox" name="criteria" value="question 1" id="c2"> is accurate 
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Question 2</legend>
+                        <label for="c3">
+                            <input type="checkbox" name="criteria" value="question 2" id="c3"> is complete 
+                        </label>
+                        <label for="c3">
+                            <input type="checkbox" name="criteria" value="question 2" id="c3"> is accurate 
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Question 3</legend>
+                        <label for="c4">
+                            <input type="checkbox" name="criteria" value="question 3" id="c4"> is complete 
+                        </label>
+                        <label for="c4">
+                            <input type="checkbox" name="criteria" value="question 3" id="c4"> is accurate 
+                        </label>
+                    </fieldset>
+
+                    <section class="being-polite">
+                        <label for="thanks"> 
+                            <input type="checkbox" name="criteria" value="being polite" id="thanks"> thanking for the letter
+                        </label>
+                        <label for="emotions"> 
+                            <input type="checkbox" name="criteria" value="being polite" id="emotions"> expressing positive emotions
+                        </label>
+                        <label for="contacts">
+                            <input type="checkbox" name="criteria" value="being polite" id="contacts"> hope for the future contacts
+                        </label>
+                    </section>
+
+                    <section class="style">
+                        <label for="greeting">
+                            <input type="checkbox" name="criteria" value="greeting" id="greeting"> greeting
+                        </label>
+                        <label for="signature">
+                            <input type="checkbox" name="criteria" value="signature" id="signature"> signature
+                        </label>
+                        <label for="conclusion">
+                            <input type="checkbox" name="criteria" value="conclusion" id="conclusion"> a phrase to conclude
+                        </label>
+                    </section>
+                </section>
+
+                <section class="k2">
+                    <h3> K2 </h3>
+                    <label for="c8">
+                        <input type="checkbox" name="criteria" value="logical" id="c8">logical
+                    </label>
+                    <label for="c9">
+                        <input type="checkbox" name="criteria" value="paragraphs" id="c9"> paragraphs
+                    </label>
+                    <label for="c10">
+                        <input type="checkbox" name="criteria" value="linking words" id="c10">linking words
+                    </label>
+                    <label for="greeting-line">
+                        <input type="checkbox" name="criteria" value="greeting-line" id="greeting-line">greeting on a separate line
+                    </label>
+                    <label for="conclusion-line">
+                        <input type="checkbox" name="criteria" value="conclusion-line" id="conclusion-line">a phrase to conclude on a separate line
+                    </label>
+                    <label for="signature-line">
+                        <input type="checkbox" name="criteria" value="signature-line" id="signature-line"> signature on a separate line
+                    </label>
+                </section>
+
+                <section class="k3">
+                    <h3> K3 </h3>
+                    <label for="c11">
+                        <input type="checkbox" name="criteria" value="vocabulary" id="c11"> 1 vocabulary or grammar mistake
+                    </label>
+                    <label for="c12">
+                        <input type="checkbox" name="criteria" value="grammar" id="c12"> 2-3 vocabulary or grammar mistakes
+                    </label>
+                    <label for="four-mistakes">
+                        <input type="checkbox" name="criteria" value="four-mistakes" id="four-mistakes"> 4 vocabulary or grammar mistakes
+                    </label>
+                    <label for="five-mistakes">
+                        <input type="checkbox" name="criteria" value="five-mistakes" id="five-mistakes"> 5 and more vocabulary or grammar mistakes
+                    </label>
+                </section>
+
+                <section class="k4">
+                    <h3> K4 </h3>
+                    <label for="c13">
+                        <input type="checkbox" name="criteria" value="spelling" id="c13"> 2 spelling or punctuation mistakes
+                    </label>
+                    <label for="c14">
+                        <input type="checkbox" name="criteria" value="punctuation" id="c14"> 3 - 4 spelling or punctuation mistakes
+                    </label>
+                    <label for="five-k4-mistakes">
+                        <input type="checkbox" name="criteria" value="punctuation" id="c14"> 5 or more spelling or punctuation mistakes
+                    </label>
+                </section>
+            </main> 
+           
         <script src="index.js"> </script>
            
     </body>
