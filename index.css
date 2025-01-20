@@ -38,10 +38,16 @@ section {
     margin-bottom: 15px;
 }
 
-fieldset {
+.questions {
     border: none;
     margin: 7px 0;
 } 
+
+.points {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+}
 
 .upload-section {
     display: flex;
